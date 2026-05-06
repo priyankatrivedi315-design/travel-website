@@ -1,0 +1,163 @@
+body {
+    font-family: Arial;
+    background-color: #9accf2;
+    color: #0a027e;
+    text-align: center;
+}
+
+.title {
+    padding: 20px;
+}
+
+/* HOME IMAGES */
+.images {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+}
+
+.images img {
+    width: 200px;
+    height: 140px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* COUNTRY LINKS */
+.countries {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.countries a {
+    text-decoration: none;
+    padding: 10px 15px;
+    background: #9f123f00;
+    color: rgb(0, 0, 0);
+    border-radius: 8px;
+}
+
+.countries a:hover {
+    background: #bbb;
+}
+
+/* COUNTRY PAGE */
+.country-page {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: rgba(77, 243, 255, 0.85);
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+}
+/* INDIA PAGE BACKGROUND */
+.india-page {
+    height: 100vh;
+
+    /* INDIA IMAGE BACKGROUND */
+    background: 
+        linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)),
+        url('india.png');}
+        /* INDIA PAGE BACKGROUND */
+.japan-page {
+    height: 100vh;
+
+    /*japan IMAGE BACKGROUND */
+    background: 
+        linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)),
+        url('japan.png');}japan-page {
+    height: 100vh;
+
+    /*japan IMAGE BACKGROUND */
+    background: 
+        linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)),
+        url('japan.png');}
+
+
+        /* INDIA PAGE BACKGROUND */
+.frace-page {
+    height: 100vh;
+
+    /* france IMAGE BACKGROUND */
+    background: 
+        linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)),
+        url('france.png');}
+               /* INDIA PAGE BACKGROUND */
+.italy-page {
+    height: 100vh;
+
+    /* france IMAGE BACKGROUND */
+    background: 
+        linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)),
+        url('italy.png');}
+.australia-page {
+    height: 100vh;
+
+    /* australia IMAGE BACKGROUND */
+    background: 
+        linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)),
+        url('australia.png');}
+.usa-page {
+    height: 100vh;
+
+    /* usa IMAGE BACKGROUND */
+    background: 
+        linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)),
+        url('usa.png');} 
+
+{
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #ff9933;
+      color: white;
+      padding: 20px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .container {
+      margin-top: 50px;
+    }
+
+    .option-btn {
+      display: inline-block;
+      margin: 20px;
+      padding: 20px 40px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      color: white;
+      transition: 0.3s;
+    }
+    .flight { background: #007bff; }
+    .car { background: #28a745; }
+    .cruise { background: #17a2b8; }
+    .plane { background: #6f42c1; }
+
+    .option-btn:hover {
+      opacity: 0.8;
+      transform: scale(1.05);
+    }
+
+    #result {
+      margin-top: 40px;
+      font-size: 20px;
+      color: #333;
+    }
+  
