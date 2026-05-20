@@ -1,18 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>japan</title>
-<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Japan</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    height:100vh;
+    background:url("img/japan.jpg") no-repeat center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay{
+    background:rgba(0,0,0,0.6);
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.container{
+    position:relative;
+    z-index:2;
+    text-align:center;
+    color:#fff;
+    width:90%;
+}
+
+h1{
+    margin-bottom:30px;
+    font-size:2.5rem;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:rgba(255,255,255,0.1);
+    border-radius:15px;
+    overflow:hidden;
+    backdrop-filter:blur(10px);
+    transition:0.4s;
+    cursor:pointer;
+}
+
+.card img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.05);
+    background:rgba(255,255,255,0.2);
+}
+
+.card h2{
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:0.9rem;
+}
+
+</style>
 </head>
-<body class="country-page" style="background-image:url('japan.png');">
-<div class="card">
-<h2>Japan</h2>
-<p><b>Capital:</b> Tokyo</p>
-<p><b>Language:</b> Japanese</p>
-<p><b>Currency:</b> Yen</p>
-<p><b>Famous Place:</b> Mount Fuji</p>
-<p><b>Food:</b> Sushi</p>
-<a href="index.html">⬅ Back</a>
+<body>
+<div class="overlay"></div>
+
+<div class="container">
+    <h1>Famous Places in Japan</h1>
+    <div class="grid">
+
+        <div class="card">
+            <img src="img/himejicastle.jpg" alt="Himeji Castle">
+            <div class="card-content">
+                <h2>Himeji Castle</h2>
+                <p>A stunning white castle surrounded by cherry blossoms.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/koyoto.jpg" alt="Kyoto Temple">
+            <div class="card-content">
+                <h2>Kyoto Temple</h2>
+                <p>Historic temples with beautiful sunset views.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/monkeypark.jpg" alt="Monkey Park">
+            <div class="card-content">
+                <h2>Monkey Park</h2>
+                <p>A unique place where monkeys roam freely.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/mountfuji.jpg" alt="Mount Fuji">
+            <div class="card-content">
+                <h2>Mount Fuji</h2>
+                <p>The iconic mountain and symbol of Japan.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/tokyo.jpg" alt="Tokyo">
+            <div class="card-content">
+                <h2>Tokyo City</h2>
+                <p>A vibrant city with modern lights and culture.</p>
+            </div>
+        </div>
+
+    </div>
 </div>
+
 </body>
 </html>

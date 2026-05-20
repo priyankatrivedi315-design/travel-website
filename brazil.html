@@ -1,18 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>brazil</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Incredible Brazil</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: url('img/brk.jpg') no-repeat center center/cover;
+      min-height: 100vh;
+      color: #fff;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.4);
+      min-height: 100vh;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      backdrop-filter: blur(15px);
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+      transition: 0.4s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.02);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 15px;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card h2 {
+      margin: 15px 0 10px;
+      font-size: 1.4rem;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      opacity: 0.9;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+  </style>
 </head>
-<body class="country-page" style="background-image:url('brazil.png');">
-<div class="card">
-<h2>Brazil</h2>
-<p><b>Capital:</b> Brasília</p>
-<p><b>Language:</b> Portuguese</p>
-<p><b>Currency:</b> Real</p>
-<p><b>Famous Place:</b> Christ the Redeemer</p>
-<p><b>Food:</b> Feijoada</p>
-<a href="index.html">⬅ Back</a>
-</div>
+
+<body>
+  <div class="overlay">
+    <h1>✨ Incredible Brazil ✨</h1>
+
+    <div class="grid">
+
+      <div class="card">
+        <img src="img/ChristtheRedeeme.jpg" alt="Christ the Redeemer">
+        <h2>Christ the Redeemer</h2>
+        <p>A world-famous statue in Rio de Janeiro, symbolizing peace and overlooking the city.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/SugarloafMountain.jpg" alt="Sugarloaf Mountain">
+        <h2>Sugarloaf Mountain</h2>
+        <p>A scenic peak offering breathtaking views of Rio de Janeiro and its coastline.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/amazonrainforest.jpg" alt="Amazon Rainforest">
+        <h2>Amazon Rainforest</h2>
+        <p>The largest tropical rainforest in the world, rich in biodiversity and natural beauty.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/IguazuFalls.jpg" alt="Iguazu Falls">
+        <h2>Iguazu Falls</h2>
+        <p>A stunning system of waterfalls on the border of Brazil and Argentina.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/CopacabanaBeach.jpg" alt="Copacabana Beach">
+        <h2>Copacabana Beach</h2>
+        <p>A famous beach in Rio known for its lively atmosphere and beautiful shoreline.</p>
+      </div>
+
+    </div>
+
+    <footer>
+      Made with ❤️ | Explore the beauty of Brazil
+    </footer>
+  </div>
 </body>
 </html>

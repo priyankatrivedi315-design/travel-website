@@ -1,19 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>italy</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Incredible India</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: url('img/Venice.jpg') no-repeat center center/cover;
+      min-height: 100vh;
+      color: #fff;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.4);
+      min-height: 100vh;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      backdrop-filter: blur(15px);
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+      transition: 0.4s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.02);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 15px;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card h2 {
+      margin: 15px 0 10px;
+      font-size: 1.4rem;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      opacity: 0.9;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+  </style>
 </head>
 
-<body class="country-page" style="background-image:url('italy.png');">
-<div class="card">
-<h2>Italy</h2>
-<p><b>Capital:</b> Rome</p>
-<p><b>Language:</b> Italian</p>
-<p><b>Currency:</b> Euro</p>
-<p><b>Famous Place:</b> Colosseum</p>
-<p><b>Food:</b> Pizza</p>
-<a href="index.html">⬅ Back</a>
+<body>
+  <div class="overlay">
+    <h1>✨ Incredible Italy ✨</h1>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="img/colosseum.jpg" alt="Colosseum">
+            <div class="card-content">
+                <h2>Colosseum</h2>
+                <p>Ancient amphitheatre in Rome, symbol of Roman Empire.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/pisa.jpg" alt="Pisa Tower">
+            <div class="card-content">
+                <h2>Pisa Tower</h2>
+                <p>Famous leaning tower and iconic landmark of Italy.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/Venice.jpg" alt="Venice">
+            <div class="card-content">
+                <h2>Venice</h2>
+                <p>Beautiful canals and romantic gondola rides.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/TreviFountain.jpg" alt="Trevi Fountain">
+            <div class="card-content">
+                <h2>Trevi Fountain</h2>
+                <p>Famous fountain where people make wishes.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/florance.jpg" alt="Florence Cathedral">
+            <div class="card-content">
+                <h2>Florence Cathedral</h2>
+                <p>Stunning cathedral known for its massive dome.</p>
+            </div>
+        </div>
+
+    </div>
 </div>
+
 </body>
 </html>

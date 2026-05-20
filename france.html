@@ -1,18 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>france</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Incredible France</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: url('img/france.jpg') no-repeat center center/cover;
+      min-height: 100vh;
+      color: #fff;
+    }
+    .overlay {
+      background: rgba(0, 0, 0, 0.4);
+      min-height: 100vh;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      backdrop-filter: blur(15px);
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+      transition: 0.4s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.02);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 15px;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card h2 {
+      margin: 15px 0 10px;
+      font-size: 1.4rem;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      opacity: 0.9;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+  </style>
 </head>
-<body class="country-page" style="background-image:url('france.png');">
-<div class="card">
-<h2>France</h2>
-<p><b>Capital:</b> Paris</p>
-<p><b>Language:</b> French</p>
-<p><b>Currency:</b> Euro</p>
-<p><b>Famous Place:</b> Eiffel Tower</p>
-<p><b>Food:</b> Croissant</p>
-<a href="index.html">⬅ Back</a>
-</div>
+
+<body>
+  <div class="overlay">
+    <h1>✨ Incredible France ✨</h1>
+
+    <div class="grid">
+
+      <div class="card">
+        <img src="img/EiffelTower.jpg" alt="Eiffel Tower" />
+        <h2>Eiffel Tower</h2>
+        <p>The iconic symbol of Paris, offering breathtaking views of the city from its towering height.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/LouvreMuseum.jpg" alt="Louvre Museum" />
+        <h2>Louvre Museum</h2>
+        <p>The world's largest art museum, home to the famous Mona Lisa and countless masterpieces.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/dame.jpg" alt="Notre-Dame Cathedral" />
+        <h2>Notre-Dame Cathedral</h2>
+        <p>A masterpiece of French Gothic architecture located in the heart of Paris.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/MontSaintMichel.jpg" alt="Arc de Triomphe" />
+        <h2>Arc de Triomphe</h2>
+        <p>A historic monument honoring those who fought for France, standing proudly on the Champs-Élysées.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/Palace.jpg" alt="Palace of Versailles" />
+        <h2>Palace of Versailles</h2>
+        <p>A grand royal residence known for its opulent architecture, gardens, and rich history.</p>
+      </div>
+
+    </div>
+
+    <footer>
+      Made with ❤️ | Explore the beauty of France
+    </footer>
+  </div>
 </body>
 </html>

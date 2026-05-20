@@ -1,18 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>usa</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Incredible USA</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: url('img/usbackground.jpg') no-repeat center center/cover;
+      min-height: 100vh;
+      color: #fff;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.4);
+      min-height: 100vh;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      backdrop-filter: blur(15px);
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+      transition: 0.4s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.02);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 15px;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card h2 {
+      margin: 15px 0 10px;
+      font-size: 1.4rem;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      opacity: 0.9;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+  </style>
 </head>
-<body class="country-page" style="background-image:url('usa.png');">
-<div class="card">
-<h2>USA</h2>
-<p><b>Capital:</b> Washington D.C.</p>
-<p><b>Language:</b> English</p>
-<p><b>Currency:</b> Dollar</p>
-<p><b>Famous Place:</b> Statue of Liberty</p>
-<p><b>Food:</b> Burger</p>
-<a href="index.html">⬅ Back</a>
-</div>
+
+<body>
+  <div class="overlay">
+    <h1>✨ Incredible USA ✨</h1>
+
+    <div class="grid">
+
+      <div class="card">
+        <img src="img/liberty.jpg" alt="Statue of Liberty" />
+        <h2>Statue of Liberty</h2>
+        <p>A symbol of freedom located in New York Harbor, welcoming visitors from around the world.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/GrandCanyon.jpg" alt="Grand Canyon" />
+        <h2>Grand Canyon</h2>
+        <p>A breathtaking natural wonder in Arizona, known for its massive size and layered red rock formations.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/WhiteHouse.jpg" alt="White House" />
+        <h2>White House</h2>
+        <p>The official residence of the President of the United States, located in Washington, D.C.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/GoldenGateBridge.jpg" alt="Golden Gate Bridge" />
+        <h2>Golden Gate Bridge</h2>
+        <p>An iconic suspension bridge in San Francisco, famous for its design and scenic beauty.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/TimesSquare.jpg" alt="Times Square" />
+        <h2>Times Square</h2>
+        <p>A vibrant commercial and entertainment hub in New York City, known for its bright lights and billboards.</p>
+      </div>
+
+    </div>
+
+    <footer>
+      Made with ❤️ | Explore the beauty of USA
+    </footer>
+  </div>
 </body>
 </html>
